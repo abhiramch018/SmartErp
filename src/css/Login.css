@@ -1,32 +1,32 @@
-.login{
-    width:100%;
-    height:100%;
-    display:flex;   
-    background:linear-gradient(to right, #df276e 0%, #bda9bd 100%);
-    margin:0;
+.login {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #df5962 0%, #c51a1a 100%);
+    display: flex;
+    margin: 0;
 }
 
-.login .leftPanel{
-    width:400px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    flex:1;
-    color:rgb(255, 255, 255);
+.login .leftPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 400px;
 }
 
-.login .rightPanel{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.login .rightPanel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login .rightPanel .card{
+.login .rightPanel .card {
     width: 300px;
     padding: 20px;
-    background: rgb(174, 170, 174);
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,41 +34,91 @@
     border-radius: 10px;
 }
 
-input{
-    width:100%;
-    height:30px;
-    padding:10px;
-    border-radius:5px;
-    border:1px solid grey;
-    outline:none;
+.login .rightPanel .card input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-
-input:focus{
-    border:2px solid #540fb4;
+.login .rightPanel .card input:focus {
+    border: 1px solid #667eea;
 }
 
+.login .rightPanel .card button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
 
+.login .rightPanel .card button:hover {
+    background: #3557ef;
+}
 
-.login .leftPanel h2{
-    font-size: 26px;
+.login .leftPanel h1 {
+    font-size: 36px;
     margin-bottom: 5px;
 }
-.login .leftPanel p{
+
+.login .leftPanel p {
     font-size: 24px;
 }
-.login .rightPanel p span{
+
+.login .rightPanel p span {
     color: dodgerblue;
     cursor: pointer;
 }
 
-.login .rightPanel .card button{
-    width:100%;
-    height:35px;
-    background:linear-gradient(to right, #8f5584 0%, #feb47b 100%);
-    border:none;
-    color:rgb(104, 16, 45);
-    font-size:16px;
-    border-radius:5px;
-    cursor:pointer;
+.login .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* fixed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .overlay .signup {
+    width: 350px;
+    height: 500px;
+    background: white;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login .overlay .signup .close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login .overlay .signup label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login .overlay .signup input {
+    height: 30px;
+    border: 1px solid salmon; /* fixed */
+    border-radius: 2px;
+    font-size: 14px; /* improved */
+    padding: 5px;
+}
+
+.login .overlay .signup .regButton:hover {
+    background: #3557ef;
 }
