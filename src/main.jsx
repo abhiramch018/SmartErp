@@ -4,7 +4,8 @@ import './index.css'
 import {BrowserRouter, Router, Routes, Route} from 'react-router-dom'
 import App from './App.jsx'
 import Login from './Login.jsx'
-import Dashboard from './Dashboard.jsx'
+import Dashboard from "./dashboard.jsx";  // lowercase
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
